@@ -1,0 +1,166 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Responsive Website</title>
+		<script type="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<script>
+        function myFunction() {
+          alert("Item added on cart");
+        }
+        </script>
+	</head>
+	
+	<style>
+	.body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	}
+	
+	.container {
+	position: relative;
+	width: 100%;
+	max-width: 1920px;
+	max-height: 1500px;
+	minimum-width: 150px;
+	height: 1500px;
+	background: #ADD8E6;
+	display: flex;
+	}
+	
+	.card{
+	position: relative;
+	margin-bottom: 500px;
+	max-width: 250px;
+	max-height: 600px;
+	}
+	
+	.card img{
+	position: relative;
+	padding: 10px;
+	max-width: 250px;
+	max-height: 500px;
+	align-items: center;
+	}
+	
+	.card div:nth-child(2){
+	position: relative
+	align-items: center;
+	text-align: center;
+	justify-content: justify;
+	}
+	
+	
+	@media screen and (max-width: 1920px){
+	.container{
+		justify-content: space-between;
+		align-items: center;
+		}
+	}
+	
+	@media screen and (max-width: 900px){
+	.container{
+		justify-content: space-between;
+		align-items: center;
+		}
+	.card{
+	position: relative;
+	margin-bottom: 500px;
+	min-width: 250px;
+	min-height: 600px;
+		}
+	}
+	
+	@media screen and (max-width: 500px){
+	.container{
+		justify-content: center;
+		flex-wrap: wrap;
+		max-height: 2000px;
+		height: 250vh
+		}
+		
+	.card{
+	position: relative;
+	max-width: 250px;
+	max-height: 300px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+		}
+	}
+	
+	footer{
+		margin-top: auto;
+		position: relative;
+		bottom: -1000%;
+	}
+	</style>
+	
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Yapi's Store</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-mdb-toggle="collapse"
+					data-mdb-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<i class="fas fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+						<a class="nav-link" href="#">Features</a>
+						<a class="nav-link" href="#">Cart</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+
+		<div class="container">
+				<div class="card" style="width: 20rem;">
+						<img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/NOTAG-03-TSHIRT-M7581_400x.jpg?v=1682082627" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">UNICLOTHES</h5>
+						<h1>$40</H1>
+						<a href="#" class="btn btn-primary"onclick="myFunction()">Buy</a>
+					</div>
+				</div>
+				
+				<div class="card" style="width: 20rem;">
+						<img src="https://i.ebayimg.com/images/g/AjwAAOSwu7xkC~sC/s-l400.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">The Champs</h5>
+						<h1>$20</H1>
+						<a href="#" class="btn btn-primary" onclick="myFunction()">Buy</a>
+					</div>
+				</div>
+				
+				<div class="card" style="width: 20rem;">
+						<img src="https://cottonon.com/dw/image/v2/BBDS_PRD/on/demandware.static/-/Sites-catalog-master-men/default/dw5d389d7c/3611209/3611209-74-4.jpg?sw=640&sh=960&sm=fit" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">California Vintage</h5>
+						<h1>$60</H1>
+					<a href="#" class="btn btn-primary" onclick="myFunction()">Buy</a>
+					</div>
+				</div>
+		</div>
+		
+				<!--footer-->
+			<footer class="bg-light text-center text-lg-start">
+				<!-- Copyright -->
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+				© 2023 Copyright:
+					<a class="text-dark" href="https://www.uniqlo.com/ph/en/">Yapi's Store</a>
+			</div>
+        <!-- Copyright -->
+      </footer>
+	</body>
+</html>
